@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>doodle classifier</title>
+
+	<script src="libraries/p5.min.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<!--<script src="libraries/p5.sound.js"></script>-->
+
+	<script src="doodle-classifier.js"></script>
+	<script src="labels.js"></script>
+	<script src="nn.js"></script>
+	<script src="matrix.js"></script>
+
+	<style>
+		body {
+			margin:0;
+			padding:0;
+			overflow: hidden;
+			background-color: #10121A;
+		}
+		canvas {
+			margin:auto;
+			display: block;
+		}
+		button {
+			font-size:24pt;
+			margin: 3pt;
+
+		}
+	</style>
+</head>
+<body>
+	<button id="train">Train</button>
+	<button id="test">Test</button>
+	<button id="guess">Guess</button>
+	<button id="clear">Clear</button>
+	<button id="loadjsonnn">Load</button>
+	<div id="sketch"></div>
+</body>
+</html>
